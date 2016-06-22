@@ -1,0 +1,604 @@
+/* 
+  string1.strings
+  热门推荐详情页面
+
+  Created by 吴书敏 on 16/6/5.
+  Copyright © 2016年 littledogboy. All rights reserved.
+*/
+
+// 简介数据
+/*
+{
+    "code": 0,
+    "data": {
+        // id
+        "aid": 4858415,
+        "copyright": 1,
+        "desc": "自制 准备了很久的大合唱，其实就是16个国人跨了bilibili分区组的大合唱啦，总之大家都辛苦了！
+        本家：VOCALOIDS (sm27399621)／SINGERS(sm27404771)
+        翻唱人员：lolo、Chimera、u_Ryo、绯缨白、西瓜Kune、Cc白萝卜、清水浊流、绯川陵彦、Morchi、哦漏QAQ、小五沉沉沉、佑可猫、凤冴Sae、眠り鼠、MOKONA010、eruka
+        后期/母带：Cc白萝卜 | 绘：Morchi | PV：眠り鼠
+        MP3下载见评论”,
+        
+        // 充电榜
+        "elec": {
+            "count": 6,
+            "list": [
+            {
+                "avatar": "http://i2.hdslb.com/bfs/face/fce69b2ac4f99d391b5151d848f97362201b3449.jpg",
+                "mid": 833133,
+                "pay_mid": 30766613,
+                "rank": 1,
+                "uname": "三三三余"
+            },
+            {
+                "avatar": "http://i1.hdslb.com/bfs/face/596b8a95f0cec868bfa3a850664d60bf3e04d311.jpg",
+                "mid": 833133,
+                "pay_mid": 4217348,
+                "rank": 2,
+                "uname": "这个昵称未被占用"
+            },
+            {
+                "avatar": "http://i1.hdslb.com/bfs/face/dee02ccd13e2ca4b52886a4422aba9a6e139f3a9.jpg",
+                "mid": 833133,
+                "pay_mid": 10735164,
+                "rank": 3,
+                "uname": "短颈雁XD"
+            },
+            {
+                "avatar": "http://i2.hdslb.com/bfs/face/def00f693a4bcf33439dfc550666eb933bc0ca93.jpg",
+                "mid": 833133,
+                "pay_mid": 4492187,
+                "rank": 4,
+                "uname": "镜子入侵"
+            },
+            {
+                "avatar": "http://i0.hdslb.com/bfs/face/dc642d483540d16bf34e9c1d8df72b77413dc4d0.jpg",
+                "mid": 833133,
+                "pay_mid": 12126756,
+                "rank": 5,
+                "uname": "藤子小同学T"
+            },
+            {
+                "avatar": "http://i0.hdslb.com/bfs/face/4ba33ad60e5c1e788e5090dba4e0af8007d7f415.jpg",
+                "mid": 833133,
+                "pay_mid": 18749154,
+                "rank": 6,
+                "uname": "咸鱼王＿阡兮"
+            }
+            ],
+            "show": true,
+            "total": 83 // 充电总人数
+        },
+        
+        // up主
+        "owner": {
+            "face": "http://i2.hdslb.com/bfs/face/fece3ff56a5ebdc54fbea0b43dfe080637a56f32.jpg",
+            "mid": 833133,
+            "name": "西瓜Kune",
+            "pendant": {
+                "expire": 0,
+                "image": "",
+                "name": ""
+            }
+        },
+        "pages": [
+        {
+            "cid": 7887899,
+            "from": "vupload",
+            "has_alias": 0,
+            "link": "",
+            "page": 1,
+            "part": "",
+            "rich_vid": "",
+            "vid": "vupload_7887899",
+            "weblink": ""
+        }
+        ],
+        
+        // 最上面的图片
+        "pic": "http://i0.hdslb.com/bfs/archive/2d5e6707c02aecfd8de0aab0e4b5c7594fb3d70f.jpg_320x200.jpg",
+        "pubdate": 1465014721,
+        
+        // 视频相关
+        "relates": [
+        // tableView 单元格
+        {
+            "aid": 534250,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "呆毛鼠要吃麵包",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/u_f/ba522b089c32dd5b848253e193ee3ac7.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 145,
+                "favorite": 60,
+                "reply": 10,
+                "share": 0,
+                "view": 4301
+            },
+            "title": "【眠り鼠】自制PV「你所不知道的故事」化物語ED"
+        },
+        {
+            "aid": 4859880,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "猫站便利店",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/c2963244c3dc04d88e28345bcc1e788b71a4b3b1.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 252,
+                "favorite": 314,
+                "reply": 125,
+                "share": 0,
+                "view": 3024
+            },
+            "title": "【佑可猫】没有来生•原创「王者孑然」奥利角色曲"
+        },
+        {
+            "aid": 4858702,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "情醉三千",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/bfe2494f7355a57c709cd5d81b3a83f8b88b36d6.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 163,
+                "favorite": 28,
+                "reply": 141,
+                "share": 0,
+                "view": 692
+            },
+            "title": "【三千翻唱】某某——唱歌的是谁！我不认识他QWQ"
+        },
+        {
+            "aid": 4162165,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "绯川陵彦",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/u_user/42f073d0d9fe6b204191d1042ba331fd.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 105,
+                "favorite": 122,
+                "reply": 98,
+                "share": 0,
+                "view": 8463
+            },
+            "title": "【绯川蛋】悟空【自生贺】"
+        },
+        {
+            "aid": 1094900,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "绯川陵彦",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/u_user/f9b47f9cd9e0b033bb0f23e47946c793.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 572,
+                "favorite": 401,
+                "reply": 139,
+                "share": 0,
+                "view": 0
+            },
+            "title": "【绯川蛋】威风堂堂（初投·原创PV付·请戴耳机）"
+        },
+        {
+            "aid": 4860007,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "YUKIri",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/f1e7fb013d61bb7f9d0b6617a1cf2c9c5202d9ca.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 465,
+                "favorite": 349,
+                "reply": 625,
+                "share": 0,
+                "view": 9011
+            },
+            "title": "【YUKIri】守护永恒的爱"
+        },
+        {
+            "aid": 3197195,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "清水浊流",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/320_200/video/aa/aa91503f6b07d9777aa8736b264c3a12.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 121,
+                "favorite": 160,
+                "reply": 94,
+                "share": 0,
+                "view": 7880
+            },
+            "title": "【清水浊流】大时代"
+        },
+        {
+            "aid": 3057641,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "Im.CC",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/320_200/video/59/59c3ea76f119feab9228d6169d938ec6.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 15,
+                "favorite": 10,
+                "reply": 13,
+                "share": 0,
+                "view": 561
+            },
+            "title": "【白萝卜】活动小丑poyo-remix- feat.KumaBi"
+        },
+        {
+            "aid": 4859413,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "KyleXian",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/925cc92b4ce1bc22b4b6eecb63856764653f4a0d.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 1641,
+                "favorite": 1473,
+                "reply": 402,
+                "share": 0,
+                "view": 10013
+            },
+            "title": "【Kyle钢琴】时之歌四国国歌就是一首歌就叫“时之歌”（四首无限循环40分钟）"
+        },
+        {
+            "aid": 2686027,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "呆毛鼠要吃麵包",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/320_200/video/c2/c293d5a97b4e2d7e45d4611710f35815.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 204,
+                "favorite": 78,
+                "reply": 59,
+                "share": 0,
+                "view": 3710
+            },
+            "title": "【眠鼠】让其响彻【失蹤人口】"
+        },
+        {
+            "aid": 4859963,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "illuvel伊律唄",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/u_user/82f571527f4afc270b77d8a7a07a95cd.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 51,
+                "favorite": 38,
+                "reply": 31,
+                "share": 0,
+                "view": 379
+            },
+            "title": "【illuvel】暧昧劣情lover"
+        },
+        {
+            "aid": 4861563,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "Assen捷",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/86aec9d37a52ce211698b5634cb62938eb6bc849.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 663,
+                "favorite": 622,
+                "reply": 374,
+                "share": 0,
+                "view": 5059
+            },
+            "title": "【Assen捷、五音Jw】翻唱《请不要挑逗我》-激情挑逗2333"
+        },
+        {
+            "aid": 1484931,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "牙龈子.",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/320_200/video/41/41decf9dbcc1ad13eb855e9e1dbe6e39.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 66,
+                "favorite": 40,
+                "reply": 21,
+                "share": 0,
+                "view": 2016
+            },
+            "title": "【牙龈子XCc白萝卜】水之精灵【翻唱】"
+        },
+        {
+            "aid": 4501623,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "乖离型赫赫",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/13bf7a62054a4926b5f70f569a418bfa96fb46be.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 259,
+                "favorite": 443,
+                "reply": 79,
+                "share": 0,
+                "view": 2660
+            },
+            "title": "【总计唱见十六位】Painter ~own way edition~"
+        },
+        {
+            "aid": 1041729,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "西瓜Kune",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/u_f/63a89e4fae2b29ec12a862d44e75400e.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 436,
+                "favorite": 304,
+                "reply": 68,
+                "share": 0,
+                "view": 10675
+            },
+            "title": "【西瓜Kune】背景，沉溺于夏天"
+        },
+        {
+            "aid": 4862657,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "满汉全席音乐团队",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/2d188f92983132b87d8c0b31f41b95c115e4f33b.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 573,
+                "favorite": 615,
+                "reply": 887,
+                "share": 0,
+                "view": 14391
+            },
+            "title": "【满汉】守护永恒的爱【巴士那】"
+        },
+        {
+            "aid": 3081350,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "等待呢歌",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/320_200/video/83/83fa69da4bc58c6173a2617ce8d61532.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 390,
+                "favorite": 897,
+                "reply": 201,
+                "share": 0,
+                "view": 11806
+            },
+            "title": "【ニコニコラボ / VOCALOIDS】「Paintër」【halyosy】"
+        },
+        {
+            "aid": 222368,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "清水浊流",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/320_200/user/1048/104884/1330266655392ffc643f7240b1.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 59,
+                "favorite": 9,
+                "reply": 7,
+                "share": 0,
+                "view": 2519
+            },
+            "title": "罪恶王冠插入曲 男版翻唱"
+        },
+        {
+            "aid": 1291689,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "呆毛鼠要吃麵包",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/u_user/851a44bcd554d35c4ee3642c14c4c4ef.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 144,
+                "favorite": 35,
+                "reply": 15,
+                "share": 0,
+                "view": 4660
+            },
+            "title": "【眠鼠】东京食尸鬼 - UnRavel【Dubstep dj-Jo Ver.】"
+        },
+        {
+            "aid": 4856893,
+            "owner": {
+                "face": "",
+                "mid": 0,
+                "name": "西国之海妖",
+                "pendant": {
+                    "expire": 0,
+                    "image": "",
+                    "name": ""
+                }
+            },
+            "pic": "http://i0.hdslb.com/bfs/archive/f8019d56b674cd3b0e48aa55c5892e94e63f02fd.jpg_320x200.jpg",
+            "stat": {
+                "coin": 0,
+                "danmaku": 275,
+                "favorite": 765,
+                "reply": 242,
+                "share": 0,
+                "view": 5740
+            },
+            "title": "【海妖】【汐音社原创】千秋此意【原创pv付】"
+        }
+        ],
+        "req_user": {
+            "attention": -999,
+            "favorite": 0
+        },
+        "rights": {
+            "bp": 0,
+            "download": 1,
+            "elec": 1,
+            "movie": 0
+        },
+        
+        // 状态
+        "stat": {
+            "coin": 4983, // 硬币
+            "danmaku": 2119, // 弹幕
+            "favorite": 6998, // 收藏
+            "reply": 1630, // 评论
+            "share": 462, // 分享
+            "view": 37179 // 观看
+        },
+        
+        // 标签
+        "tags": [
+        "HALYOSY",
+        "国人翻唱",
+        "佑可猫",
+        "西瓜KUNE",
+        "CHIMERA君",
+        "U_RYO",
+        "哦漏QAQ",
+        "ERUKA"
+        ],
+        "tid": "31",
+        // 标题
+        "title": "❀Paintër·16国人跨区大合唱【lo奇亮白瓜萝水蛋毛漏五可凤鼠黄撸】❀",
+        "tname": ""
+    }
+}
